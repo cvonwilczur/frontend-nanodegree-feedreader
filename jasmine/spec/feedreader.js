@@ -87,9 +87,9 @@ $(function() {
          */
     beforeEach(function(done) {
       loadFeed(0, function() {
-        firstContent = $('.feed').find(allFeeds.url);
+        firstContent = $('.entry-link')[0].href;
         loadFeed(1, function() {
-          secondContent = $('.feed').find(allFeeds.url);
+          secondContent = $('.entry-link')[0].href;
           done();
         });
       });
