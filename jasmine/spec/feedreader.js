@@ -82,7 +82,7 @@ $(function() {
     });
 
     it('loads at least a single .entry element within the .feed container', function() {
-      expect($('.entry')).toBeDefined();
+      expect($('.entry .feed')).toBeDefined();
     });
 
   });
